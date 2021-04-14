@@ -1,20 +1,6 @@
-var add;
-add = function (n1, n2) {
-    return n1 + n2;
+///type ElevatedEmployee = Admin & Employee;
+var e1 = {
+    name: "Max",
+    priveleges: ["create-server"],
+    startDate: new Date()
 };
-var Person = /** @class */ (function () {
-    function Person(n) {
-        this.age = 30;
-        if (n) {
-            this.name = n;
-        }
-    }
-    Person.prototype.greet = function (phrase) {
-        console.log(phrase + " " + this.name);
-    };
-    return Person;
-}());
-var user1;
-user1 = new Person();
-user1.greet("Hi there I am");
-console.log(user1);
